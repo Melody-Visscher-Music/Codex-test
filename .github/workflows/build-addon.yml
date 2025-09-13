@@ -6,7 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+ bootstrap-empty-github-repo-for-blender-project
       - uses: actions/checkout@v4
+
+ bootstrap-empty-github-repo-for-blender-project
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v5
+ main
       - name: Create ZIP
         run: |
           mkdir -p dist

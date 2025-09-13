@@ -3,6 +3,7 @@ import types
 
 bpy = types.ModuleType("bpy")
 
+ bootstrap-empty-github-repo-for-blender-project
 
 class DummyOperator:
     bl_idname = ""
@@ -27,6 +28,11 @@ class DummyPropertyGroup:
     pass
 
 
+
+class DummyOps:
+    pass
+
+ main
 class DummyUtils:
     def register_class(self, cls):
         pass
@@ -35,11 +41,18 @@ class DummyUtils:
         pass
 
 
+
+bpy.ops = DummyOps()
+bpy.utils = DummyUtils()
+
+ main
+
 class DummyProps:
     @staticmethod
     def BoolProperty(**kwargs):
         return kwargs.get("default")
 
+ bootstrap-empty-github-repo-for-blender-project
     @staticmethod
     def StringProperty(**kwargs):
         return kwargs.get("default", "")
@@ -84,6 +97,16 @@ class DummyCollection(list):
         super().remove(item)
 
 
+bpy.props = DummyProps()
+class DummyOperator:
+    def __init__(self):
+        self.reported = []
+
+    def report(self, level, message):
+        self.reported.append((level, message))
+ main
+
+
 class DummyData:
     def __init__(self):
         self.meshes = DummyCollection()
@@ -119,5 +142,14 @@ bpy.data = DummyData()
 bpy.context = types.SimpleNamespace(
     scene=types.SimpleNamespace(render=types.SimpleNamespace(engine="CYCLES"))
 )
+        self.meshes = []
+        self.materials = []
+        self.images = []
+
+
+bpy.types = types.SimpleNamespace(Operator=DummyOperator)
+bpy.data = DummyData()
+bpy.types = types.SimpleNamespace(Operator=object)
+main
 
 sys.modules["bpy"] = bpy

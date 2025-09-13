@@ -2,12 +2,14 @@
 
 A Blender 4.3.2 addon project.
 
+ bootstrap-empty-github-repo-for-blender-project
 ## Add-on Features
 
 - Provides `object.hello` operator that logs "Hello World" to the Info log.
 - Includes `object.cleanup_unused_data` operator to remove unused meshes, materials, and images with configurable data-type toggles.
 - Supplies `object.remove_duplicate_vertices` operator that collapses duplicate vertices across all meshes.
 
+ main
 ## Development
 
 ```bash

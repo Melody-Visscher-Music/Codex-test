@@ -41,5 +41,7 @@ class DummyData:
 
 bpy.types = types.SimpleNamespace(Operator=DummyOperator)
 bpy.data = DummyData()
+bpy.types = types.SimpleNamespace(Operator=object)
+main
 
 sys.modules["bpy"] = bpy

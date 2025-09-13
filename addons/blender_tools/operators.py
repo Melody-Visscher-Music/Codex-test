@@ -1,3 +1,4 @@
+
 """Example operators for the Blender Tools add-on."""
 
 import logging
@@ -18,8 +19,18 @@ class OBJECT_OT_hello(bpy.types.Operator):
 
     def execute(self, context):  # type: ignore[override]
         logger.info("Executing hello operator")
+import bpy
+
+
+class OBJECT_OT_hello(bpy.types.Operator):
+    bl_idname = "object.hello"
+    bl_label = "Say Hello"
+
+    def execute(self, context):
+main
         self.report({"INFO"}, "Hello World")
         return {"FINISHED"}
+
 
 
 class OBJECT_OT_cleanup_unused_data(bpy.types.Operator):
@@ -79,3 +90,10 @@ def unregister() -> None:
         OBJECT_OT_hello,
     ):
         bpy.utils.unregister_class(cls)
+def register():
+    bpy.utils.register_class(OBJECT_OT_hello)
+
+
+def unregister():
+    bpy.utils.unregister_class(OBJECT_OT_hello)
+main

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "last_step": "init",
+  "next_actions": [
+    "Fill out addon code specifics",
+    "Add more tests"
+  ]
+}

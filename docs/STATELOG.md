@@ -1,0 +1,3 @@
+# State Log
+
+- Project initialized

@@ -1,0 +1,8 @@
+addon:
+  - 'addons/**'
+tests:
+  - 'tests/**'
+docs:
+  - 'docs/**'
+ci:
+  - '.github/**'

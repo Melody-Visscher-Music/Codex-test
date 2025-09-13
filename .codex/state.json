@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "last_step": "duplicate-vertex-cleanup",
+  "next_actions": [
+    "Add more optimization tools",
+    "Improve user documentation"
+  ]
+}

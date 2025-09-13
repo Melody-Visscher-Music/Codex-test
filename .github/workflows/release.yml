@@ -8,6 +8,9 @@ jobs:
   semantic-release:
     runs-on: ubuntu-latest
     steps:
+bootstrap-empty-github-repo-for-blender-project
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
  bootstrap-empty-github-repo-for-blender-project
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

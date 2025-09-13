@@ -23,6 +23,8 @@ black .
 pytest -q
 ```
 
+Pull requests are checked and can be auto-merged by the **Auto PR Merge** workflow.
+
 ## License
 
 MIT

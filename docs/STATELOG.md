@@ -8,3 +8,4 @@
 - Rebuilt unified add-on with optimization, UV, materials, baking, export, and animation helpers
 - Added operator to remove duplicate vertices and updated tests
 - Added configurable unused data cleanup operator and updated tests
+- Added auto PR merge workflow and auto-fix script

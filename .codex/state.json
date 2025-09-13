@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_step": "configurable-unused-data-cleanup",
+  "last_step": "auto-pr-merge-workflow",
   "next_actions": [
     "Implement additional optimization utilities",
     "Enhance documentation"

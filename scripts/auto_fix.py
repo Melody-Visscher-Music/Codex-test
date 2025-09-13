@@ -15,7 +15,7 @@ def run(cmd: list[str]) -> subprocess.CompletedProcess[str]:
 
 def ensure_blender_version() -> bool:
     """Ensure the add-on targets Blender 4.3.2."""
-    init_file = ROOT / "addons" / "blender_tools.py"
+    init_file = ROOT / "addons" / "blender_tools" / "__init__.py"
     if not init_file.exists():
         return False
     text = init_file.read_text()

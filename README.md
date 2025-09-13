@@ -13,7 +13,7 @@ Blender Tools is a collection of helpers for Blender 4.3.2 targeting game-ready 
 
 ## Installation
 
-Copy the `addons/blender_tools.py` file into your Blender add-ons directory or install the ZIP built from this repository.
+Copy the `addons/blender_tools` folder into your Blender add-ons directory or install the ZIP built from this repository.
 
 ## Development
 

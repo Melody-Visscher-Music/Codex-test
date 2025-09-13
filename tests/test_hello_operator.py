@@ -10,4 +10,3 @@ def test_operator_execute():
     result = op.execute(None)
     assert result == {"FINISHED"}
     assert op.reported[0][1] == "Hello World"
-

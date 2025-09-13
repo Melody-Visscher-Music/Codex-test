@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "last_step": "single-script-addon",
+  "next_actions": [
+    "review additional optimization features",
+    "expand tests"
+  ]
+}

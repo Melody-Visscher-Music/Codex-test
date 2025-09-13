@@ -1,12 +1,12 @@
 """Blender Tools Add-on"""
 
+__version__ = "0.1.0"
+
 bl_info = {
     "name": "Blender Tools",
     "blender": (4, 3, 2),
     "category": "Object",
 }
-
-__version__ = "1.0.0"
 
 from .animation import operators as anim_ops
 from .baking import operators as baking_ops
@@ -29,13 +29,13 @@ MODULES = [
 ]
 
 
-def register():
+def register() -> None:
     for module in MODULES:
         if hasattr(module, "register"):
             module.register()
 
 
-def unregister():
+def unregister() -> None:
     for module in reversed(MODULES):
         if hasattr(module, "unregister"):
             module.unregister()

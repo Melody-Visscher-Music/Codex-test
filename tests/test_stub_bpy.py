@@ -8,8 +8,11 @@ class DummyOperator:
     bl_idname = ""
     bl_label = ""
 
+    def __init__(self):
+        self.reported = []
+
     def report(self, level, message):
-        pass
+        self.reported.append((level, message))
 
 
 class DummyPanel:

@@ -1,6 +1,5 @@
 # Changelog
 
-## 1.0.0 - 2024-01-01
-- Initial release with optimization, UV, materials, baking, export, and animation helpers.
+All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/).

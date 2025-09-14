@@ -1,5 +1,0 @@
-* text=auto eol=lf
-poetry.lock merge=ours
-*.lock merge=ours
-README.md merge=union
-

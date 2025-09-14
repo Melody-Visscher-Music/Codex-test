@@ -1,0 +1,5 @@
+pre-commit==4.3.0
+pytest==8.4.2
+black==25.1.0
+flake8==7.3.0
+fake-bpy-module==20250914

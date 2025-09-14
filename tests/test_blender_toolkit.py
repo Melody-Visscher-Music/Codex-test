@@ -5,13 +5,9 @@ import types
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))
 
 import scripts.blender_toolkit as blender_toolkit  # noqa: E402
-from scripts import (  # noqa: E402
-    apply_location_keyframes,
-    batch_export,
-    create_principled_material,
-    optimize_object,
-    retarget_animation,
-)
+from scripts import (apply_location_keyframes, batch_export,  # noqa: E402
+                     create_principled_material, optimize_object,
+                     retarget_animation)
 
 
 def test_batch_export(monkeypatch, tmp_path):

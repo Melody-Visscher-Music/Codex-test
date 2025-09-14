@@ -1,5 +1,5 @@
 """Blender scripting toolkit modules."""
 
-from . import export, optimize, shader, animation
+from . import animation, export, optimize, shader
 
 __all__ = ["export", "optimize", "shader", "animation"]

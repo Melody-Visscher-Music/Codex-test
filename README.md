@@ -41,6 +41,13 @@ apply_location_keyframes(obj, [1, 10], [(0, 0, 0), (1, 2, 3)], dry_run=True)
 
 ## Development
 
+Example: export selected objects as FBX with a safety dry run.
+
+```python
+from scripts import export
+export.export_fbx(["Cube"], "out.fbx", dry_run=True)
+```
+
 Run tests and linters before committing:
 
 ```sh
